@@ -1,0 +1,53 @@
+/* 
+* @Author: anchen
+* @Date:   2017-04-08 16:52:28
+* @Last Modified by:   anchen
+* @Last Modified time: 2017-04-08 18:59:27
+*/
+/*************************************
+响应式设计
+最好学了 boostrap再来
+************************************** */
+@media screen and (min-width: 500px) {
+    body {
+        background: green;
+    }
+    
+}
+
+@media screen and (min-width: 800px) {
+    
+    body {
+        background: blue;
+    }
+    /*************************************
+    two column layout
+    ************************************** */
+    
+    .p {
+        width: 50%;
+        float: left;
+    }
+
+    .contact {
+        width: 40%;
+        float: right;
+    }
+    
+    /*************************************
+    page: list show;
+    ************************************** */
+    ul li {
+        width: 28%;
+    }
+
+    ul li:nth-child(3n) {
+        clear: left;
+    }
+    /*************************************
+    操作总体和 普通 css一样
+    有些特殊的等到学boostrap
+    ************************************** */
+    
+}
+

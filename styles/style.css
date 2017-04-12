@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+html{
+	font-size: 20px;
+	font-family: 'Jim Nightshade', cursive;		
+	//字体名称
+	background: #00539f;
+}
+
+body{
+	width: 60%;
+	margin: 0 auto;
+	background: #ff9500;
+	padding: 5% ;
+	/*border: 5px solid black;*/
+}
+
+h1{
+	margin: 0;
+	padding: 20px 0;
+	color: skyblue;
+	text-shadow: 3px 3px 1px black;
+}
+
+
+
+footer {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+/********************************
+以下几行组合就能造成效果；
+图片大小随 屏幕尺寸大小变化而变
+
+
+*/
+
+/*
+1 body 宽度必须是 百分数
+ */
+
+/*
+2 图片 设置最大宽度
+ */
+img{
+    max-width: 100%;
+}
+
+/*
+3 无要点标记 margin padding均归零
+ */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/*
+4 li 宽度设置百分数
+ */
+ul li {
+    /*关键，不然图片...不能随屏幕变化*/
+    width: 42%;
+
+    /*margin 相邻间隔开*/
+    margin: 2.5%; 
+
+    /*有一行多个li的效果*/
+    float: left;
+
+    background: #fff;
+    color: #000;
+
+}
+
+footer {
+    /*不受前面的float影像 不环绕 单独成行显示*/
+    clear: both;
+}
+
+
+
+/*li 横向排列*/
+nav {
+    width: 100%;
+    background: #fff;
+    color: ;
+
+    border-bottom: 1px solid black;
+}
+
+nav ul li {
+    width: 20%;
+    margin: 2%;
+    float: left;
+    display: inline-block;
+}
+
+
+/*响应式区域*/
+
+.p {
+    clear: both;
+}
+.contact {
+    clear: both;
+}
